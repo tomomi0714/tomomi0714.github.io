@@ -1,0 +1,330 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-right: auto;
+ 	margin-left : auto;
+ 	font-family: Hiragino Mincho ProN;
+}
+
+body{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+/*  header　*/
+
+header{
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	position: fixed;
+}
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+h1{
+	color: #ffffff;
+	float: left;
+	padding: 20px 45px;
+	font-family: cursive;
+	font-size: 20pt;
+}
+
+.top-manu{
+	list-style: none;
+}
+.top-manu li{
+	float: right;
+}
+.top-manu li a{
+	display: block;
+	padding: 20px 45px;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: cursive;
+	font-size: 15pt;
+}
+
+#container{
+	padding: 100 0 0;
+	height: 700px;
+	padding-top: 80px;
+	z-index: 1;
+}  
+
+/* body */
+
+img {
+	width: 300px;
+	height: 300px;
+	padding: 
+}
+
+/*
+.box {
+    width: 200px;
+    height: 70px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 30px;
+}
+.box-text{
+	color: white;
+	font-family: cursive;
+	font-size: 25px;
+	display: table-cell; 
+ 	vertical-align: middle;
+ 	width: 200px;
+ 	height: 70px;
+}
+
+*/
+
+
+button {
+	width: 200px;
+    height: 70px;
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+button:hover{
+    color: #000000;
+    background-color: white;
+    text-decoration: none;
+}
+
+
+.play-img-01 ,.play-img-02 ,.play-img-03,
+.sea-img-01 ,.sea-img-02 ,.sea-img-03 ,
+.food-img-01 ,.food-img-02 ,.food-img-03 {
+	float: left;
+}
+
+
+h2{
+	color: white;
+	text-decoration: underline;
+	font-family: cursive;
+	font-size: 50pt;
+}
+
+h3{
+	font-family: Hiragino Mincho ProN;
+	font-size: 10pt;
+}
+
+a{
+	font-family: Hiragino Mincho ProN;
+}
+
+.main{
+	float: left;
+	margin: 17% 0 50px 200px;
+}
+
+.main2{
+	float: right;
+	margin: 20% 200px 50px 0;
+}
+
+.content{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.profile-text{
+	float: right;
+	margin: 2% 30% 50px 0;
+}
+
+.profile-content{
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.pic{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-image: url(../img/E05175A3-B15C-419F-B748-64A2447B7C80.JPG);
+	background-position: center center;
+	transform: rotate(90deg);
+	background-size: 300px;
+	float: left;
+	margin-left: 14%;
+}
+
+/*-----フッター-----*/
+
+footer{
+	width: 100%;
+	height: 180px;
+	background-color: black;
+	position: relative;
+}
+
+footer p{
+	font-size: 9pt;
+	position: absolute;
+	bottom: 0;
+}
+
+
+
+
+/*-----タブレット-----*/
+
+@media all and (max-width: 1024px) {
+
+.top-manu li a{
+	font-size: 11pt;
+	padding: 20px 25px;
+}
+
+img {
+	width: 200px;
+	height: 200px; 
+	overflow: hidden;
+}
+
+.content{
+	width: auto;
+	margin: 0 auto;
+}
+
+.play-img , .sea-img , .food-img{
+	width: 600px;
+}
+
+.main{
+	float: left;
+	margin: 20% 0 10% 25%;
+}
+
+.main2{
+	float: right;
+	margin: 25% 25% 0 0;
+}
+
+.pic{
+	margin-left: 15%;
+}
+
+p{
+	font-size: 11pt;
+}
+
+}
+
+
+
+/*------スマホ-----*/
+
+@media all and (max-width: 700px) {
+
+body ,h3{
+  font-size: 5pt; 
+ } 
+
+#container{
+	height: 300px;
+	background-size: cover;
+}
+
+
+h1{
+	font-size: 9pt;
+	padding: 20px 20px;
+}
+
+.top-manu li a{
+	font-size: 7pt;
+	padding: 20px 10px;
+}
+
+h2{
+	font-size: 20pt;
+}
+
+.main{
+	float: left;
+	margin: 20% 0 10% 19%;
+}
+
+.main2{
+	float: right;
+	margin: 25% 19% 0 0;
+	font-size: 7pt;
+}
+
+p{
+	font-size: 7pt;
+}
+
+
+
+.play-img-01 ,.play-img-02 ,.play-img-03,
+.sea-img-01 ,.sea-img-02 ,.sea-img-03 ,
+.food-img-01 ,.food-img-02 ,.food-img-03 {
+	float: none;
+	margin-right: auto;
+ 	margin-left : auto;
+ 	margin-bottom: 8%;
+}
+
+
+.play-img , .sea-img , .food-img{
+	width: auto;
+	margin: 0 auto;
+}
+
+
+
+button{
+	width: 150px;
+	margin-top: 0;
+}
+
+.pic{
+	width: 125px;
+	height: 125px;
+	/*border-radius: 50%;
+	background-image: url(../img/E05175A3-B15C-419F-B748-64A2447B7C80.JPG);
+	background-position: center center;
+	transform: rotate(90deg);
+	background-size: 300px;
+	float: left;*/
+	/*margin-left: 15%;*/
+	background-size: 180px;
+	float: none;
+	margin: 0 auto;
+}
+
+.profile-text{
+	text-align: center;
+	float: none;
+	margin: 0;
+	margin-top: 5%;
+}
+
+
+}
+
+
+
+
